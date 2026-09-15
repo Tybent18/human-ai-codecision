@@ -27,5 +27,4 @@ The adaptive policy successfully regulated authority: it escalated 8.2% of trial
 
 The Stage One result therefore validates selective intervention behavior and rejects any present claim that the chosen adaptive thresholds improve outcomes. The next computational study should separate policy quality from agent quality through skill sweeps, threshold ablations, and held-out seeds. Human trust and satisfaction remain entirely unmeasured.
 
-Audit the [aggregate summary](aggregate_summary.csv), [per-seed summaries](condition_summary.csv), [trial telemetry](trial_telemetry.csv), and [manifest](manifest.json).
-
+Audit the [aggregate summary](aggregate_summary.csv), [per-seed summaries](condition_summary.csv), [compressed trial telemetry](trial_telemetry.csv.gz), and [manifest](manifest.json). The gzip archive expands to a standard CSV.

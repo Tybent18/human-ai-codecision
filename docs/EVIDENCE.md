@@ -4,7 +4,7 @@
 
 Every computational run exports:
 
-- `trial_telemetry.csv`: one auditable row per decision;
+- `trial_telemetry.csv` (or `.csv.gz` in frozen bundles): one auditable row per decision;
 - `condition_summary.csv`: one row per policy and seed;
 - `aggregate_summary.csv`: means, sample standard deviations, and 95% intervals;
 - `manifest.json`: environment, configuration, study type, and claim boundary;
@@ -20,4 +20,3 @@ python -m codecision.cli \
 ```
 
 Never combine synthetic-agent and participant records into one unlabeled analysis. The `synthetic` column and manifest `study_type` exist specifically to prevent that category error.
-
