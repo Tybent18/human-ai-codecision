@@ -7,7 +7,7 @@ import csv
 import io
 import secrets
 from dataclasses import dataclass, field
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from flask import Flask, Response, jsonify, render_template, request
@@ -68,7 +68,7 @@ def create_app(database: Path = Path("study_data/pilot.db"), trials: int = 24) -
             CodecisionEngine(config, policy, seed),
         )
         sessions[session_id] = live
-        store.create_session(session_id, policy.value, datetime.now(UTC).isoformat())
+        store.create_session(session_id, policy.value, datetime.now(timezone.utc).isoformat())
         return jsonify(
             {"session_id": session_id, "condition": policy.value, "trial": _next_trial(live)}
         )

@@ -6,7 +6,7 @@ Human-AI Codecision Systems is an auditable research laboratory for uncertainty-
 
 ![Human-AI Codecision laboratory](demos/codecision-lab.gif)
 
-[Methods](docs/METHODS.md) · [Architecture](docs/ARCHITECTURE.md) · [Human study protocol](docs/HUMAN_STUDY.md) · [Ethics](docs/ETHICS.md) · [Evidence](docs/EVIDENCE.md) · [Roadmap](docs/ROADMAP.md) · [Baseline results](results/synthetic_baseline/README.md)
+[Methods](docs/METHODS.md) · [Architecture](docs/ARCHITECTURE.md) · [Human study protocol](docs/HUMAN_STUDY.md) · [Ethics](docs/ETHICS.md) · [Evidence](docs/EVIDENCE.md) · [Roadmap](docs/ROADMAP.md) · [Baseline results](results/synthetic_baseline/README.md) · [Research library](docs/research/README.md)
 
 ## Implemented conditions
 
@@ -50,6 +50,17 @@ Open `http://127.0.0.1:5050`. The interface records response latency, cursor hes
 
 The checked-in baseline uses simulated human and AI agents. It validates software behavior, policy comparisons, logging, and analysis. It does **not** measure real human trust, satisfaction, workload, autonomy, or safety. Those outcomes require approved participant research.
 
+## Research documents
+
+- [Synthetic Stage One Technical Report](docs/research/stage-one-technical-report.pdf) — frozen five-seed evidence and limitations
+- [Pre-Registered Experimental Protocol](docs/research/experimental-protocol.pdf) — held-out computational validation and authority-policy ablations
+- [Human-Participant Ethics and Validation Roadmap](docs/research/human-study-ethics-roadmap.pdf) — prerequisites for ethically defensible participant research
+- [Tier 1: Capstone Research Paper](docs/research/tier-1-capstone.pdf) — adaptive decision support under uncertainty and risk
+- [Tier 2: Master's Research Design](docs/research/tier-2-masters.pdf) — threshold learning, personalization, calibration, and longitudinal collaboration
+- [Tier 3: Doctoral Research Agenda](docs/research/tier-3-doctoral-agenda.pdf) — formal dynamic authority, trust, contestability, and multi-agent shared control
+
+Use the [navigable research library](docs/research/README.md) for reading order, evidence status, and claim boundaries.
+
 ## Development
 
 ```bash
@@ -63,4 +74,3 @@ CI tests Python 3.10 and 3.12 and uploads a fresh synthetic smoke-run evidence b
 ## Citation and license
 
 See [CITATION.cff](CITATION.cff). Code is available under the [MIT License](LICENSE).
-

@@ -3,18 +3,25 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
-from enum import StrEnum
+from enum import Enum
 from pathlib import Path
 
 
-class PolicyName(StrEnum):
+class StringEnum(str, Enum):
+    """Python 3.10-compatible equivalent of :class:`enum.StrEnum`."""
+
+    def __str__(self) -> str:
+        return self.value
+
+
+class PolicyName(StringEnum):
     HUMAN_ONLY = "human_only"
     STATIC = "static_recommendation"
     ADAPTIVE = "adaptive_codecision"
     AGGRESSIVE = "aggressive_automation"
 
 
-class InterventionMode(StrEnum):
+class InterventionMode(StringEnum):
     DEFER = "defer"
     RECOMMEND = "recommend"
     ASSIST = "assist"
