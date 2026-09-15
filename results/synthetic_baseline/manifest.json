@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-09-15T05:49:14.946763+00:00",
+  "study_type": "synthetic computational validation",
+  "human_participants": 0,
+  "policies": [
+    "human_only",
+    "static_recommendation",
+    "adaptive_codecision",
+    "aggressive_automation"
+  ],
+  "seeds": [
+    7,
+    21,
+    42,
+    84,
+    101
+  ],
+  "trials_per_condition": 180,
+  "distribution_shift_start": "final 25% of trials",
+  "config": {
+    "trials_per_condition": 180,
+    "seeds": [
+      7,
+      21,
+      42,
+      84,
+      101
+    ],
+    "human_expertise": 0.68,
+    "human_fatigue": 0.18,
+    "ai_skill": 0.82,
+    "uncertainty_threshold": 0.42,
+    "ai_confidence_threshold": 0.25,
+    "critical_risk_threshold": 0.55,
+    "override_margin": 0.05,
+    "contestability": true,
+    "output_dir": "results/synthetic_baseline"
+  },
+  "runtime_seconds": 0.2769999049996841,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "claim_boundary": "Synthetic-agent results validate system behavior only; they do not measure human trust, satisfaction, cognition, or real-world safety."
+}

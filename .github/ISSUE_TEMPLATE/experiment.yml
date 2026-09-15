@@ -1,0 +1,30 @@
+name: Experiment proposal
+description: Register a falsifiable codecision experiment
+title: "[Experiment]: "
+labels: ["experiment"]
+body:
+  - type: textarea
+    attributes:
+      label: Hypothesis
+      description: State the predicted comparison before running the experiment.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Protocol
+      description: Conditions, participants or agents, seeds, trials, metrics, and stopping rule.
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Evidence type
+      options: [Synthetic, Usability pilot, Approved human-participant study]
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Claim boundary
+      description: What will this experiment not establish?
+    validations:
+      required: true
+

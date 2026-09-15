@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codecision Laboratory</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="eyebrow">HUMAN × AI CODECISION</div>
+      <h1>Shared Authority Laboratory</h1>
+      <p>Classify cybersecurity events while an auditable AI policy decides when to defer, recommend, assist, or override.</p>
+    </header>
+
+    <section id="consent" class="panel consent">
+      <div><span class="step">00</span><h2>Local pilot consent</h2></div>
+      <p>This research prototype records decision timing, cursor hesitation, revisions, confidence, interventions, and outcomes. It does not request names, emails, or demographic information. Participation is voluntary; you may delete the session at any time.</p>
+      <label><input id="agree" type="checkbox"> I understand this is a research pilot and consent to local telemetry collection.</label>
+      <button id="start">Begin randomized session</button>
+    </section>
+
+    <section id="study" class="hidden">
+      <div class="statusbar">
+        <span id="condition">CONDITION</span>
+        <span id="progress">TRIAL 0 / 0</span>
+        <span id="timer">0.0s</span>
+      </div>
+      <div class="workspace">
+        <section class="panel event-card">
+          <div><span class="step">01</span><h2>Security event</h2></div>
+          <div id="features" class="features"></div>
+          <div class="complexity"><span>Event complexity</span><div><i id="complexity"></i></div></div>
+        </section>
+        <section class="panel decision-card">
+          <div><span class="step">02</span><h2>Your assessment</h2></div>
+          <div class="choices">
+            <button class="choice" data-value="0">Benign</button>
+            <button class="choice danger" data-value="1">Threat</button>
+          </div>
+          <label for="confidence">Confidence <strong id="confidence-value">50%</strong></label>
+          <input id="confidence" type="range" min="5" max="100" value="50">
+          <button id="submit" disabled>Submit decision</button>
+        </section>
+      </div>
+      <section id="explanation" class="panel explanation hidden"></section>
+    </section>
+
+    <section id="complete" class="panel hidden">
+      <span class="step">✓</span><h2>Session complete</h2>
+      <p>Your anonymized local evidence bundle is ready. Download it for the study record or permanently delete this session.</p>
+      <div class="actions"><a id="download">Download CSV</a><button id="delete" class="secondary">Delete session</button></div>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='study.js') }}"></script>
+</body>
+</html>
+

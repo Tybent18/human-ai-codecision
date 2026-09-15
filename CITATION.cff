@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Human-AI Codecision Systems"
+type: software
+authors:
+  - family-names: "Tybent18"
+version: 0.1.0
+date-released: 2026-09-15
+license: MIT
+abstract: "An auditable laboratory for uncertainty-aware, contestable human-AI shared decisions."
+

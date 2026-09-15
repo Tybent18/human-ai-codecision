@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "human-ai-codecision-systems"
+version = "0.1.0"
+description = "An auditable laboratory for uncertainty-aware human-AI shared decisions."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Tybent18"}]
+dependencies = [
+  "Flask>=3.0",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "Pillow>=10.0",
+  "scipy>=1.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+codecision-experiment = "codecision.cli:main"
+codecision-study = "codecision.web:main"
+
+[tool.setuptools.packages.find]
+include = ["codecision*"]
+
+[tool.setuptools.package-data]
+codecision = ["templates/*.html", "static/*.css", "static/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
