@@ -7,7 +7,7 @@ import json
 import platform
 import time
 from collections.abc import Callable
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from .agents import SimulatedAI, SimulatedHuman
@@ -70,7 +70,7 @@ def run_suite(
     _write_csv(config.output_dir / "condition_summary.csv", summaries)
     _write_csv(config.output_dir / "aggregate_summary.csv", aggregates)
     manifest = {
-        "created_at": datetime.now(UTC).isoformat(),
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "study_type": "synthetic computational validation",
         "human_participants": 0,
         "policies": [policy.value for policy in conditions],

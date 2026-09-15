@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import argparse
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from .config import ExperimentConfig
@@ -18,7 +18,7 @@ def main() -> int:
     parser.add_argument("--trials", type=int, default=180)
     parser.add_argument("--quick", action="store_true")
     args = parser.parse_args()
-    stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     output = args.output or Path("results/runs") / stamp
     seeds = (7, 42) if args.quick else tuple(int(value) for value in args.seeds.split(","))
     trials = min(args.trials, 36) if args.quick else args.trials
