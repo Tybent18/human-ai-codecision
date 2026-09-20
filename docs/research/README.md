@@ -1,6 +1,6 @@
 # Human-AI Codecision Systems research library
 
-[← Project home](../../README.md) · [Synthetic Stage One results](../../results/synthetic_baseline/README.md) · [Methods](../METHODS.md) · [Ethics](../ETHICS.md) · [Roadmap](../ROADMAP.md)
+[← Project home](../../README.md) · [Synthetic Stage One results](../../data/synthetic_baseline/runs/2026-09-15_synthetic-codecision-v1/) · [Methods](../METHODS.md) · [Ethics](../ETHICS.md) · [Roadmap](../ROADMAP.md)
 
 This library connects the frozen synthetic evidence, the next computational experiment, the ethics path toward participant research, and the program's three-tier research progression. It deliberately separates implemented mechanisms and measured simulation results from proposed human-subject claims.
 

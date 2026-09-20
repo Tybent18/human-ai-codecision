@@ -1,6 +1,11 @@
 # Synthetic Stage One Baseline
 
-[← Home](../../README.md) · [Methods](../../docs/METHODS.md) · [Evidence guide](../../docs/EVIDENCE.md)
+[← Home](../../../../README.md) · [Methods](../../../../docs/METHODS.md) · [Evidence guide](../../../../docs/EVIDENCE.md)
+
+Run ID: `2026-09-15_synthetic-codecision-v1`  
+Generated: `2026-09-15T05:49:14.946763+00:00`  
+Participants: `0`  
+Status: frozen synthetic-agent baseline
 
 This frozen bundle contains computational validation only: five independent seeds, 180 trials per policy and seed, 3,600 total decisions, and a controlled AI distribution shift during the final quarter of each run. There were **zero human participants**.
 

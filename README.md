@@ -6,7 +6,7 @@ Human-AI Codecision Systems is an auditable research laboratory for uncertainty-
 
 ![Human-AI Codecision laboratory](demos/codecision-lab.gif)
 
-[Methods](docs/METHODS.md) · [Architecture](docs/ARCHITECTURE.md) · [Human study protocol](docs/HUMAN_STUDY.md) · [Ethics](docs/ETHICS.md) · [Evidence](docs/EVIDENCE.md) · [Roadmap](docs/ROADMAP.md) · [Baseline results](results/synthetic_baseline/README.md) · [Research library](docs/research/README.md)
+[Methods](docs/METHODS.md) · [Architecture](docs/ARCHITECTURE.md) · [Human study protocol](docs/HUMAN_STUDY.md) · [Ethics](docs/ETHICS.md) · [Evidence](docs/EVIDENCE.md) · [Roadmap](docs/ROADMAP.md) · [Data catalog](data/README.md) · [Baseline results](data/synthetic_baseline/runs/2026-09-15_synthetic-codecision-v1/) · [Research library](docs/research/README.md)
 
 ## Implemented conditions
 

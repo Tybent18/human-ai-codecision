@@ -20,3 +20,5 @@ python -m codecision.cli \
 ```
 
 Never combine synthetic-agent and participant records into one unlabeled analysis. The `synthetic` column and manifest `study_type` exist specifically to prevent that category error.
+
+The [data catalog](../data/README.md) indexes committed evidence by UTC collection date and immutable run ID. The frozen computational bundle is [`2026-09-15_synthetic-codecision-v1`](../data/synthetic_baseline/runs/2026-09-15_synthetic-codecision-v1/), explicitly recording zero human participants.
